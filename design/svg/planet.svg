@@ -1,0 +1,27 @@
+<svg width="168" height="112" viewBox="0 0 168 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="84" cy="56" r="52" fill="#FFFFFF" fill-opacity="0.12"/>
+<path d="M15.53 70.55A70 15 -12 0 1 152.47 41.45" stroke="#FFE7A3" stroke-width="6" stroke-linecap="round"/>
+<circle cx="84" cy="56" r="36" fill="url(#planetFill)"/>
+<circle cx="70" cy="38" r="6" fill="#FFFFFF" fill-opacity="0.35"/>
+<circle cx="104" cy="74" r="5" fill="#F08A24" fill-opacity="0.45"/>
+<circle cx="64" cy="76" r="3.5" fill="#F08A24" fill-opacity="0.45"/>
+<ellipse cx="73" cy="56" rx="4" ry="5" fill="#3B1D00"/>
+<ellipse cx="95" cy="56" rx="4" ry="5" fill="#3B1D00"/>
+<circle cx="65" cy="65" r="5" fill="#FF7AA8" fill-opacity="0.6"/>
+<circle cx="103" cy="65" r="5" fill="#FF7AA8" fill-opacity="0.6"/>
+<path d="M77 66Q84 73 91 66" stroke="#3B1D00" stroke-width="3" stroke-linecap="round"/>
+<path d="M152.47 41.45A70 15 -12 0 1 15.53 70.55" stroke="#FFE7A3" stroke-width="6" stroke-linecap="round" fill="none"/>
+<path d="M20 14Q20 22 28 22 Q20 22 20 30 Q20 22 12 22 Q20 22 20 14Z" fill="#FFFFFF"/>
+<path d="M148 6Q148 16 158 16 Q148 16 148 26 Q148 16 138 16 Q148 16 148 6Z" fill="#FFFFFF"/>
+<path d="M156 86Q156 92 162 92 Q156 92 156 98 Q156 92 150 92 Q156 92 156 86Z" fill="#FFFFFF" fill-opacity="0.8"/>
+<path d="M12 87Q12 92 17 92 Q12 92 12 97 Q12 92 7 92 Q12 92 12 87Z" fill="#FFFFFF" fill-opacity="0.7"/>
+<circle cx="132" cy="102" r="3" fill="#FFFFFF" fill-opacity="0.6"/>
+<circle cx="40" cy="8" r="2.5" fill="#FFFFFF" fill-opacity="0.6"/>
+<circle cx="136" cy="34" r="7" fill="#C9B8FF"/>
+<defs>
+<linearGradient id="planetFill" x1="60" y1="22" x2="108" y2="92" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFE07A"/>
+<stop offset="1" stop-color="#FF9F43"/>
+</linearGradient>
+</defs>
+</svg>
