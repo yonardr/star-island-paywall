@@ -3,8 +3,8 @@
 Мобильный paywall для детской игры, который открывается во встроенном webview: два тарифа, тестовая покупка с записью в БД, восстановление покупок, состояния загрузки, ошибок и успеха.
 
 - **Figma:** https://www.figma.com/design/YDDIUw1G6Ba5dsXc8pRFRK
-- **Демо:** _DEPLOY_URL_ (состояния можно посмотреть через `?simulate=offers-error`, `?simulate=purchase-error` или `?simulate=slow`)
-- **Репозиторий:** _REPO_URL_
+- **Демо:** https://star-island-paywall.vercel.app (состояния можно посмотреть через `?simulate=offers-error`, `?simulate=purchase-error` или `?simulate=slow`)
+- **Репозиторий:** https://github.com/yonardr/star-island-paywall
 
 ## Локальный запуск
 
