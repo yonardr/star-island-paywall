@@ -131,7 +131,16 @@ export function usePaywall() {
   }
 
   function close(reason: 'dismissed' | 'purchased') {
-    notifyHost({ type: 'close', reason })
+    if (notifyHost({ type: 'close', reason })) return
+
+    // Regular browser tab, no native shell to close the webview: give the button a visible result instead
+    if (purchase.value) {
+      purchase.value = null
+      isRestored.value = false
+    }
+    else {
+      showToast({ kind: 'info', title: 'Закрытие работает в приложении', text: 'В браузере закрывать некуда' })
+    }
   }
 
   return {

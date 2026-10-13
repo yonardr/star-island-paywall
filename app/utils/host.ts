@@ -13,9 +13,10 @@ interface HostWindow {
 /**
  * Tells the native shell what happened (close / purchase). Covers the common webview bridges:
  * React Native, WKWebView script message handler `paywall`, Android `addJavascriptInterface("PaywallBridge")`.
- * Opened in a regular browser, the event just goes to window.parent (useful when embedded in an iframe).
+ * Inside an iframe the event goes to window.parent.
+ * Returns false when there is no host at all (a regular browser tab), so the caller can react itself.
  */
-export function notifyHost(event: HostEvent): void {
+export function notifyHost(event: HostEvent): boolean {
   const host = window as unknown as HostWindow
   const message = JSON.stringify(event)
 
@@ -23,4 +24,6 @@ export function notifyHost(event: HostEvent): void {
   else if (host.webkit?.messageHandlers?.paywall) host.webkit.messageHandlers.paywall.postMessage(event)
   else if (host.PaywallBridge) host.PaywallBridge.postMessage(message)
   else if (window.parent !== window) window.parent.postMessage(event, '*')
+  else return false
+  return true
 }
